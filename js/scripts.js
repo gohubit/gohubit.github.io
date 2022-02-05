@@ -208,6 +208,13 @@
 		}
 	});
 
+    $("form").submit(function(e){
+      var value = null
+      if ($("#nemail").val()){ value = $("#nemail").val()}
+      if ($("#semail").val()){ value = $("#semail").val()}
+      e.preventDefault();
+    window.location.replace("https://airtable.com/shrCZUTmU7JnHlxQD?prefill_email="+value);
+    })
 
     /* Back To Top Button */
     // create the back to top button

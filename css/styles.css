@@ -41,14 +41,14 @@ html {
 
 body, p {
 	color: #53575a;
-	font: 400 1rem/1.625rem "Karla", sans-serif
+	font: 400 1rem/1.625rem "Inter", sans-serif
 }
 
 h1 {
 	color: #1DB954;
 	font-weight: 700;
 	font-size: 2.5rem;
-	line-height: 3.125rem;
+	line-height: 3.3rem;
 	letter-spacing: -0.5px;
 }
 
@@ -117,10 +117,11 @@ h6 {
 a {
 	color: #53575a;
 	text-decoration: underline;
+
 }
 
 a:hover {
-	color: #53575a;
+	color: #1DB954;
 	text-decoration: underline;
 }
 
@@ -1066,7 +1067,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #ffd103;
+	background-color: #1DB954;
 }
 
 
