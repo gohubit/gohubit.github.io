@@ -409,6 +409,7 @@ input[type='checkbox'] {
 	line-height: 0;
 	cursor: pointer;
 	transition: all 0.2s;
+	max-width: 400px;
 }
 
 .submit-button:hover {
@@ -541,7 +542,7 @@ input[type='checkbox'] {
 
 .navbar .dropdown-item:hover {
 	background-color: #ffffff;
-	color: #ffd103;
+	color: #1DCF9F;
 }
 
 .navbar .dropdown-divider {
@@ -1133,6 +1134,7 @@ a.submit-button {
 	line-height: 0;
 	cursor: pointer;
 	transition: all 0.2s;
+	
 }
 
 a.submit-button:hover {
