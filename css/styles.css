@@ -61,6 +61,34 @@ gradient {
 	background-clip: text;
 	text-fill-color: transparent;
 }
+
+.zoom-in img{
+	-webkit-filter: grayscale(75%);
+	filter: grayscale(75%);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	height: 150px;
+}
+
+#link-card{
+	text-decoration: none;
+}
+
+.zoom-in:hover img{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.zoom-in h5{
+	color: #0b101b;
+}
+
+.zoom-in:hover h5{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	color:#0b101b
+}
+
 h2 {
 	font-family: 'Karla';
 	font-style: normal;
@@ -594,7 +622,7 @@ input[type='checkbox'] {
 .header .card {
 	margin-bottom: 4rem;
 	padding: 3.5rem 1.5rem;
-	border-radius: 50px;
+	border-radius: 20px;
 	border: none;
 }
 
