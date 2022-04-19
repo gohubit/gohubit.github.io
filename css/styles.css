@@ -143,6 +143,14 @@ h6 {
 
 }
 
+.p-small-italic {
+	font-size: 0.875rem;
+	font-style: italic;
+	line-height: 1.5rem;
+	color: #292B28;
+
+}
+
 .testimonial-text {
 	font-style: italic;
 }
