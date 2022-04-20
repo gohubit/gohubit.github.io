@@ -595,6 +595,7 @@ input[type='checkbox'] {
 	margin-top: 0.125rem;
 }
 
+
 .navbar .navbar-toggler {
 	padding: 0;
 	border: none;
@@ -1686,8 +1687,9 @@ a.submit-button:hover {
 }
 
 .float:hover {
-	color: #7879F1;
 	text-decoration: underline;
+	background-color:#26b45a;
+	color:#FFF;
 }
 .my-float{
 	margin-top:16px;
