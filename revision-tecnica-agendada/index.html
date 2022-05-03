@@ -111,13 +111,14 @@
         let invitee_last_name = params.invitee_last_name
         let invitee_email = params.invitee_email
         let telefono  = params.answer_1 //telefono
-        let patente = params.answer_2 //patente
-        let metodo = params.answer_3.toLowerCase() //método
+        let direccion = params.answer_2 //direccion
+        let patente = params.answer_3 //patente
+        let metodo = params.answer_4.toLowerCase() //método
         
         window.onload = function(){
         var title = invitee_first_name + ' ' +  invitee_last_name + ", estás casi listo"
-        var description = 'Has agendado una revisión técnica para el ' + event_start_time + '. Ese día vamos a ' + metodo + ' para recoger tu vehículo de patente ' 
-        + patente + '. Para confirmar tu cita procede a realizar el pago'
+        var description = 'Has agendado una revisión técnica para el ' + event_start_time + '. Ese día vamos a ' + metodo + ' para recoger tu vehículo patente ' 
+        + patente + ' en la dirección: '+ direccion+'. Para confirmar tu cita procede a realizar el pago'
         document.getElementById('title-script').innerHTML = title;
         document.getElementById('description-script').innerHTML = description
         };
