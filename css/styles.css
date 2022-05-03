@@ -54,7 +54,12 @@ h1 {
 	color: #292B28
 }
 
-
+.card-success {
+	max-width: 800px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 50px;
+}
 
 gradient {
 	background: linear-gradient(89.41deg, #1DCF96 20.52%, #1DCF96 26.85%, #53A9DA 47.31%, #5D5FEF 54.48%, #7879F1 59.33%);
