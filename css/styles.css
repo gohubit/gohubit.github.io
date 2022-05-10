@@ -1722,3 +1722,47 @@ a.submit-button:hover {
 .my-float{
 	margin-top:16px;
 }
+
+/* Notification bar*/
+
+
+
+.alert-success {
+  position: relative;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+  margin-bottom: 1em;
+  background-color: #5D5FEF;
+  width: 100%;
+  text-align: center;
+}
+
+
+.close {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  color: #EBEFFF;
+  cursor: pointer;
+}
+.closer:hover {
+    color: inherit;
+  }
+
+.reset {
+  background-color: transparent;
+  border: solid 3px #cccccc;
+  color: #cccccc;
+  transition: background-color 0.5s linear 0.1s;
+}
+
+.reset:hover{  
+background-color: #cccccc;
+color: white;
+}
+
