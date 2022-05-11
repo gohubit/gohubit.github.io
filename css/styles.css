@@ -69,6 +69,14 @@ gradient {
 	text-fill-color: transparent;
 }
 
+gradient-it {
+	background: linear-gradient(114.14deg, #2CD59F 34.53%, #1DCF96 41.58%, #53A9DA 53.9%, #5D5FEF 72.4%, #7879F1 77.81%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
 .zoom-in img{
 	-webkit-filter: grayscale(75%);
 	filter: grayscale(75%);
@@ -1729,7 +1737,7 @@ a.submit-button:hover {
 
 .alert-success {
   position: relative;
-  border-radius: 5px;
+  border-radius: 0px;
   box-sizing: border-box;
   color: white;
   margin-bottom: 1em;
@@ -1764,5 +1772,161 @@ a.submit-button:hover {
 .reset:hover{  
 background-color: #cccccc;
 color: white;
+}
+
+/* Social Proof */
+
+body-social-proof {
+    font-size: 15px;
+}
+
+header-social-proof {
+    display: flex;
+    color: white;
+    padding: 100px 0px 20px;
+	justify-content: center;
+}
+
+.content-social-proof {
+    width: 50%;
+	align-self: center;
+}
+
+h1-social-proof {
+    width: 70%;
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.content-social-proof p {
+    width: 85%;
+    line-height: 24px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.ratings-social-proof {
+    align-self: center;
+}
+
+.rating-social-proof {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 12px;
+	
+}
+.rating-social-proof-2 {
+    margin-left: 50px;
+}
+
+.rating-social-proof-3 {
+    margin-left: 100px;
+}
+.stars-social-proof {
+    margin-left: 5px;
+}
+.stars-social-proof img {
+    margin-right: 5px;
+	width: 90%;
+}
+main-social-proof {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+	margin: 0px 0px;
+}
+.card-social-proof {
+    background-color: white;
+    color: #fff;
+    padding: 30px 30px;
+    width: 335px;
+    line-height: 24px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.about-social-proof {
+    display: flex;
+    align-items: center;
+}
+.about-social-proof img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+	margin-left: auto;
+}
+.tag-social-proof {
+    color: hsl(333, 80%, 67%);
+}
+.card-social-proof p {
+    opacity: 0.8;
+	margin: 0px;
+}
+.name-social-proof {
+    opacity: 1 !important;
+	color:#5D5FEF;
+}
+.card-social-proof-2 {
+    margin-top: 40px;
+}
+.card-social-proof-3 {
+    margin-top: 80px;
+}
+
+@media (max-width: 1024px){
+    header-social-proof{
+        flex-direction: column;
+    }
+    .content-social-proof,
+    .content-social-proof p{
+        width: 100%;
+        text-align: center;
+		align-self: center;
+    }
+    h1-social-proof{
+        width: 100%;
+
+    }
+    .rating-social-proof{
+        flex-direction: column;
+		text-align: center;
+    }
+   
+    .stars-social-proof{
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+    main-social-proof{
+        flex-direction: column;
+    }
+    .card-social-proof{
+        width: 335px;
+		
+
+    }
+    .card-social-proof-3{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 552px){
+    header-social-proof,
+    main-social-proof{
+        padding: 0px 0px;
+    }
+    main-social-proof{
+        margin-top: 0px;
+    }
+    .card-social-proof{
+        margin-top: 20px;
+    }
+
+    h1-social-proof{
+        font-size: 32px;
+    }
 }
 
