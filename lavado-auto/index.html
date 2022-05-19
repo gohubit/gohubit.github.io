@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+      <link rel="alternate" hreflang="es-CL" href="https://carvuk.com/revision-tecnica-agendada"/>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+      
+      <link rel="icon" type="icon" sizes="32x32" href="../images/icon-carvuk.svg"/>
+      <meta name="msapplication-TileColor" content="../images/icon-carvuk.svg" />
+      <meta name="theme-color" content="../images/icon-carvuk.svg" />
+
+      <meta name="robots" content="INDEX,FOLLOW"/>
+      <meta name="description" content="Agenda el servicio para tu vehiculo a domicilio hoy. Somos el Uber del sector automotriz."/>
+      <meta name="title" content="Carvuk: Servicio de vehículos a domicilio"/>
+      <link rel="canonical" href="https://carvuk.com/revision-tecnica-agendada" />
+
+      <!-- OPEN GRAPHH -->
+      <meta property="og:description" content="Agenda el servicio para tu vehiculo a domicilio hoy. Somos el Uber del sector automotriz."/>
+      <meta property="og:title" content="Carvuk: Servicio de vehículos a domicilio"/>
+      <meta property="og:url" content="https://www.carvuk.com" />
+      <meta property="og:image" content="https://www.carvuk.com/images/heroimage.svg" />
+      <meta property="og:image:type" content="image/svg" />
+      <meta property="og:image:width" content="618" />
+      <meta property="og:image:height" content="487" />
+      <meta property="og:image:alt" content="Carvuk: Servicio de vehículos a domicilio" />
+      <meta property="og:locale" content="es-cl" />
+      <meta property="og:type" content="website" />
+
+      <!-- TWITTER -->
+      <meta name="twitter:description" content="Agenda el cambio de batería a domicilio hoy"/>
+      <meta name="twitter:title" content="Carvuk: Servicio de vehículos a domicilio"/>
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content="@carvuk" />
+      <meta name="twitter:site" content="@carvuk" />
+      <meta name="twitter:image" itemprop="image" content="https://www.carvuk.com/images/heroimage.svg" />
+
+      <!-- Webpage Title -->
+      <title>¡Estás casi listo!</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
+   <link href="../css/styles.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D259N14PFM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D259N14PFM');
+  </script>
+	<!-- Favicon  -->
+    <link rel="icon" href="../images/icon-carvuk.svg">
+</head>
+
+
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="#"><img src="../images/carvuk-logo.svg" alt="logo carvuk"><img style="width:20%" src="../images/payment.svg"></img></a>
+        
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header" style="height:100%;padding-top:7em;">
+        <div class="container" style="text-align:-webkit-center;">
+            <div class="row"  style="justify-content:center">
+                <div class="card" style="width: 36rem;margin:10px;">
+                    <div class="col-lg-12 col-xl-12" style="text-align-last:center;">
+                        <div class="card-header">
+                            1️⃣ Selecciona el tipo de lavado:
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                            <input type="radio" id="type1" name="type" value="simple" checked><br>
+                            <label for="type1">Simple<br><p style="font-size:smaller;">Exterior (💲11.990)</p></label><br>
+                            </li>
+                            <li class="list-group-item">
+                            <input type="radio" id="type2" name="type" value="full"><br>
+                            <label for="type2">Full<br><p style="font-size:smaller;">Exterior + Interior (💲15.990)</p></label>
+                            </li>
+                        </ul>
+                        <div class="card-header">
+                            2️⃣ Cotiza y agenda:
+                            </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h4 id="price">Precio: 💲11.990</h4>
+                            </li>
+                        </ul>
+                        <a id="link-calendly" href="../lavado-auto-calendly-simple">
+                            <button  class="submit-button">
+                                <i class="fa fa-calendar" aria-hidden="true"></i> Agendar
+                            </button>
+                        </a> 
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div>
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <script>
+
+        const dict = { 'simple': 'Precio: 💲11.990', 'full': 'Precio: 💲15.990'}
+        
+        window.onload = function() {
+            var t1 = document.getElementById('type1');
+            var t2 = document.getElementById('type2');
+            t1.onclick = handler;
+            t2.onclick = handler;
+            }
+        
+        function handler() {
+            
+            var type;
+            var source;
+            if (document.getElementById('type1').checked){
+                type = document.getElementById('type1').value
+                source = "../lavado-auto-calendly-simple"
+            }
+            else if  (document.getElementById('type2').checked){
+                type = document.getElementById('type2').value
+                source = "../lavado-auto-calendly-full"
+            }
+            var price = dict[type]
+            document.getElementById('price').innerHTML = price;
+            document.getElementById('link-calendly').href = source;
+        }
+        
+    </script>
+
+    <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+   
+</body>
+</html>
