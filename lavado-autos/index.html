@@ -271,9 +271,22 @@
     </div> <!-- end of footer -->
     <!-- end of footer -->
 
-    <a href="https://wa.me/+56983841944?text=Hola%20necesito%20ayuda%20con%20un%20scanner" class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-        </a>
+<script>
+    (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+        window.chatwootSDK.run({
+            websiteToken: 'd2iyVY6CJxTio5dXAwvwg9yF',
+            baseUrl: BASE_URL
+        })
+        }
+    })(document,"script");
+    </script>
 
     <!-- Copyright -->
     <div class="copyright" style="background-color:#EBEFFF">
