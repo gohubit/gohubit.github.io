@@ -114,6 +114,7 @@
         get: (searchParams, prop) => searchParams.get(prop),
         });
         // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+        //?assigned_to=Carvuk&event_type_uuid=ac102fc2-d6bd-448a-9391-366dde1c684a&event_type_name=Revisión%20Técnica&event_start_time=2022-06-03T15%3A30%3A00-04%3A00&event_end_time=2022-06-03T18%3A30%3A00-04%3A00&invitee_uuid=5d80657b-02f8-45eb-9912-ff73872fba52&invitee_first_name=Nicolás&invitee_last_name=Vega&invitee_email=ndvega%40uc.cl&answer_1=%2B56%209%203735%206356&answer_2=%7BDireccion%7D&answer_3=%7BComuna%7D&answer_4=%7BPatente%7D&answer_5=Mandarte%20un%20mensaje%20por%20WhatsApp
         let assigned_to = params.assigned_to; // "some_value"
         let event_type_name = params.event_type_name
         let event_type_uuid = params.event_type_uuid
@@ -124,8 +125,9 @@
         let invitee_email = params.invitee_email
         let telefono  = params.answer_1 //telefono
         let direccion = params.answer_2 //direccion
-        let patente = params.answer_3 //patente
-        let metodo = params.answer_4.toLowerCase() //método
+        let comuna = params.answer_3 //comuna
+        let patente = params.answer_4.toUpperCase() //patente
+        let metodo = params.answer_5.toLowerCase() //método
         
         window.onload = function(){
         var title = invitee_first_name + ' ' +  invitee_last_name + ", estás casi listo"
