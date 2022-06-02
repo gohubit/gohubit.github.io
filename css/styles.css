@@ -1191,6 +1191,7 @@ a.back-to-top {
 	background: #4d505a url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 18px 18px;
 	text-indent: -9999px;
+
 }
 
 a:hover.back-to-top {

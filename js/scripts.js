@@ -246,7 +246,7 @@
     window.location.replace("https://airtable.com/shrCZUTmU7JnHlxQD?prefill_email="+value);
     })
 
-    /* Back To Top Button */
+    /* Back To Top Button
     // create the back to top button
     $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
     var amountScrolled = 700;
@@ -257,7 +257,7 @@
             $('a.back-to-top').fadeOut('500');
         }
     });
-
+     */
 
 	/* Removes Long Focus On Buttons */
 	$(".button, a, button").mouseup(function() {
