@@ -1177,6 +1177,8 @@ input[type='checkbox'] {
 /******************************/
 /*     Back To Top Button     */
 /******************************/
+
+/*
 a.back-to-top {
 	position: fixed;
 	z-index: 999;
@@ -1194,6 +1196,7 @@ a.back-to-top {
 a:hover.back-to-top {
 	background-color: #1DCF9F;
 }
+*/
 
 a.submit-button {
 	display: inline-block;
