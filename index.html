@@ -2,7 +2,7 @@
 <html lang="es-cl">
 <head>
       <link rel="alternate" hreflang="es-CL" href="https://carvuk.com"/>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
@@ -328,6 +328,7 @@
                             </div>
                         </a>
                     </div>
+                    
                     <!-- end of card -->
                     <div class="card third zoom-in">
                         <a id="link-card" href="https://wa.me/+56983841944?text=Hola!%20Necesito%20ayuda%20con%20mi%20veh%C3%ADculo">
@@ -546,9 +547,15 @@
           g.async = true;
           s.parentNode.insertBefore(g,s);
           g.onload=function(){
+            window.chatwootSettings = {
+                  type: 'expanded_bubble',
+                   launcherTitle: 'Háblanos aquí',
+                   showPopoutButton: true
+            }
             window.chatwootSDK.run({
               websiteToken: '1b3Jp4HLE16MMqFNSNDybyX6',
               baseUrl: BASE_URL
+              
             })
           }
         })(document,"script");
