@@ -1227,7 +1227,8 @@ a.submit-button:hover {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background: url('../images/header-background.png') center center no-repeat;
+	background-color: #EBEFFF;
+	/* background: url('../images/header-background.png') center center no-repeat; */
 	background-size: cover;
 }
 
